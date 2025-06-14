@@ -308,16 +308,6 @@ ul {
   flex-direction: row;
 }
 
-/* Main alanındaki üçüncü section bölümündeki ikon listesini sarmalayan sırasız listenin özellikleri burada belirtilmiştir. */
-.third-section-icon-list ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  justify-content: space-between;
-}
-
 /* Main alanındaki üçüncü section bölümündeki ikonların özellikleri burada belirtilmiştir. */
 .icon-circle-team-card {
   width: 40px;
@@ -331,8 +321,18 @@ ul {
 }
 
 /* Main alanındaki üçüncü section bölümündeki ikonların :hover durumundaki özellikleri burada belirtilmiştir. */
-.team-card:hover .icon-circle-team-card {
+.icon-circle-team-card:hover {
   background-color: #404bbf;
+}
+
+/* Main alanındaki üçüncü section bölümündeki ikon listesini sarmalayan sırasız listenin özellikleri burada belirtilmiştir. */
+.third-section-icon-list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
 }
 
 /* Main alanındaki dördüncü section bölümünü çevreleyen div özellikleri burada belirtilmiştir. */
@@ -408,7 +408,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.8);
+  background-color: rgba(77, 90, 229);
   color: #ffffff;
   display: flex;
   justify-content: center;
