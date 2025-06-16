@@ -5,10 +5,12 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-  width: 1440px;
-  margin: 0 auto;
-  color: #434455;
   background-color: #fcfcfc;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
 }
 
 /* Header bölümünün konumlandırma özellikleri burada belirtilmiştir. */
@@ -205,7 +207,7 @@ ul {
 }
 
 /* Main alanının ilk section bölümünün özellikleri burada belirtilmiştir.*/
-.first-section-box section {
+.first-section-box .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +216,7 @@ ul {
 
 /* Main alanının ikinci section bölümünü kapsayan div özellikleri burada belirtilmiştir. */
 .second-section-box {
+  height: 464px;
   display: flex;
   justify-content: center;
 }
@@ -221,12 +224,14 @@ ul {
 /* Main alanının ikinci section bölümündeki  elemanların çevresini saran kutucuklarının özellikleri burada belirtilmiştir. */
 .second-section-list {
   width: 1128px;
-  height: 224px;
-  margin: 120px 156px;
+  min-height: 224px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Main alanının ikinci section bölümündeki liste özellikleri burada belirtilmiştir. */
-.second-section-box section ul {
+.second-section-list ul {
   display: flex;
   gap: 24px;
   padding: 0;
@@ -452,6 +457,7 @@ ul {
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  color: #434455;
   gap: 120px;
 }
 
@@ -495,12 +501,9 @@ ul {
 
 /* Footer alanındaki ikonların her birinin div içerisindeki konumunu belirleyen özellikleri ve diğer özellikler burada belirtilmiştir. */
 .social-media-icons {
-  height: 40px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   list-style: none;
-  overflow: visible;
   margin: 0;
   padding: 0;
 }
@@ -526,4 +529,10 @@ ul {
 .icon-inner {
   width: 16px;
   height: 16px;
+}
+
+/* Footer alanının tüm içeriğini kapsayan div özellikleri burada belirtilmiştir. */
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
